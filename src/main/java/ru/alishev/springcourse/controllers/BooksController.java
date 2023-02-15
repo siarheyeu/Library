@@ -38,7 +38,7 @@ public class BooksController {
         else
             model.addAttribute("books", booksService.findWithPagination(page, booksPerPage, sortByYear));
 
-        return "books/index";
+        return "index";
     }
 
     @GetMapping("/{id}")
